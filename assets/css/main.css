@@ -51,6 +51,14 @@ table {
 	border-spacing: 0;
 }
 
+#twitter-widget-0 { 
+   width: device-width;
+}
+
+.w3-display-topleft {
+  width:25%
+}
+
 body {
 	-webkit-text-size-adjust: none;
 }
