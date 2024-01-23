@@ -1,146 +1,294 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Chris Boyce - Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Boyce - Games Programmer Portfolio</title>
+    <!-- Add the link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        #projects {
+            text-align: center;
+        }
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Chris Boyce</a></li>
-							<li><a href="#one">My Projects</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+        .project-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .project-button {
+            text-decoration: none;
+            color: #ffffff; /* Set text color for project names */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #4f555e; /* Set background color for each button */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Chris Boyce - Games Programmer</h1>
-							<h2></a>Unreal and Unity Developer</h2>
-							</a>I am a programmer with over 4 years of experience developing PC and Mobile Games. I have learned various languages including C++, C#, and Python.
-							My Socials are Linked Below<br />
-							<h3></h3>
-							<ul class="icons">
-								<li><a href="https://twitter.com/chris__boyce" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/christopher.boyce.50552" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/chris-boyce?tab=overview&from=2023-05-01&to=2023-05-19" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.instagram.com/chris__boyce/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/chris--boyce/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="actions">
-							</ul>
-						</div>
-					</section>
+        .project-button img {
+            width: 100%; /* Make sure the image fills the button */
+            border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+            object-fit: cover; /* Ensure the image covers the entire container */
+            height: 100%; /* Force the image to be square */
+        }
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/Curve.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>5v5 Based Skill Rating System (UE5 C++)</h2>
-									<p>This was my Dissertation project where I programmed 3 Skill Rating Systems. Elo, TrueSkill, and "Percentile Skill Rating" a new system. And collected data and analyzed the outcomes.</p>
-									<ul class="actions">
-										<li><a href="5v5.html" class="button">More Details</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/Trials.png" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>The Trials Of Anubis (OpenGL C++) </h2>
-									<p>This was a group project where we had to make a Game Engine and a Game within a 6-week time frame.</p>
-									<ul class="actions">
-										<li><a href="Trials.html" class="button">More Details</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/Reclaimed.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Reclaimed Mobile Game (Unity C#)</h2>
-									<p>A Top-Down Shooter Mobile game developed in Unity. This project followed the development cycle with Vertical and Horizontal Prototypes as well as Game Design Document and Technical Design Document.</p>
-									<ul class="actions">
-										<li><a href="Reclaimed.html" class="button">More Details</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/Tool.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Spawn System Tool (Unreal Engine C++)</h2>
-									<p>A UE5 Tool that allows the user to select enemys as well as the amount and where they wish to spawn. It then runs the next rounds once all are dead. This is intended for a Zombie Game Mode such as COD Zombies or a Tower Defence Game</p>
-									<ul class="actions">
-										<li><a href="SpawnSystemTool.html" class="button">More Details</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/ZombieGame.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Zombie Game (Unity C#)</h2>
-									<p></p>
-									<ul class="actions">
-										<li><a href="ZombieGame.html" class="button">More Details</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/Beer.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>TaVeRn (Unity C# - VR)</h2>
-									<p></p>
-									<ul class="actions">
-										<li><a href="Tavern.html" class="button">More Details</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Chris Boyce</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+        .project-button h3 {
+            margin-top: 10px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34; /* Set body background color */
+            color: #61dafb; /* Set default text color */
+        }
 
-	</body>
+        code {
+            font-family: 'Courier New', monospace;
+        }
+
+        header {
+            text-align: center;
+            padding: 2em; /* Increased padding for header */
+            background-color: #282c34;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
+
+        nav {
+            background: linear-gradient(to right, #800080, #0000FF);
+            padding: 0.3em;
+            text-align: center;
+        }
+        .social-icon {
+             color: #fff; /* Set the color to white */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        nav a {
+            color: #2c323a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        section {
+            max-width: 1000px; /* Increased max-width for the middle sections */
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#about-me {
+            background-color: #2c323a; /* Purple background color */
+            color: #fff; /* White text color */
+        }
+
+        section#projects {
+            background-color: #2c323a; /* Purple background color */
+            color: #fff; /* White text color */
+        }
+
+
+        h1, h2 {
+            color: #fff; /* Set heading text color to white */
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #2c323a;
+            color: #abb2bf;
+            padding: 10px;
+            width: 250px;
+            height: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #about-me {
+            text-align: center;
+        }
+
+        .about-me-content {
+            display: flex;
+    align-items: center;
+    justify-content: center; /* You can adjust this if needed */
+        }
+
+    .small-image {
+        width: 200px; /* Adjust the width of the small image as needed */
+        height: auto;
+        }
+
+        .text-content {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+        .angle-right-icon {
+            color: #61dafb;
+            margin-right: 10px;
+        }
+
+        aside a {
+            display: flex;
+            align-items: center;
+            color: #abb2bf;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .angle-right-icon {
+            color: #61dafb;
+            margin-right: 10px;
+        }
+
+        aside a:hover {
+            color: #fff;
+        }
+        #projects {
+    text-align: center;
+    
+}
+
+
+    </style>
+</head>
+<body>
+
+    <aside>
+        <a href="#top">Chris Boyce</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#about-me"></a>
+        <a href="#about-me">About Me</a>
+
+        <a class="angle-right-icon fas fa-angle-down" href="#projects"></a>
+        <a href="#projects">My Projects</a>
+
+        <a class="angle-right-icon fas fa-angle-down" href="#contact"></a>
+        <a href="#contact">Contact</a>
+    </aside>
+
+    <body id="top">
+        <!-- Your page content -->
+    </body>
+
+    <header>
+        <h1>Chris Boyce</h1>
+        <p style="font-size: 1.2em;">Games Programmer</p>
+    </header>
+
+    <nav>
+        <a href="https://twitter.com/chris__boyce" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/chris--boyce/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chris-boyce" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:boycechris001@gmail.com" style="color: #fff;"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <div class="about-me-content">
+            <div class="text-content">
+                <p>
+                    <span class="keyword"><i class="icon fas fa-laptop-code"></i> Unreal Engine</span>,
+                    <span class="keyword"><i class="icon fas fa-gamepad"></i> Unity</span>,
+                    <span class="keyword"><i class="icon fas fa-terminal"></i> C++</span>,
+                    <span class="keyword"><i class="icon far fa-window-maximize"></i> C#</span>, 
+                    <span class="keyword"><i class="icon fab fa-python"></i> Python</span>,
+                    <span class="keyword"><i class="icon fas fa-desktop"></i> PC</span>,
+                    <span class="keyword"><i class="icon fas fa-walking"></i> VR</span>,
+                    <span class="keyword"><i class="icon fas fa-mobile-alt"></i> Mobile</span>
+                </p>
+                <p>Games Programmer with 5+ years in PC and Mobile Game development. Specialized in Unreal Engine and Unity, with proficiency in C++, C#, and Python.</p>
+            </div>
+            <img src="images/Doom.jpg" alt="Small Image" class="small-image">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-buttons">
+            <a href="MenuSystem.html" class="project-button">
+                <img src="images/MS.png" alt="Project 1">
+                <h3>Menu System (UE5 C++)</h3>
+            </a>
+            <a href="#projects/project1" class="project-button">
+                <img src="images/Beer.png" alt="Project 1">
+                <h3>AI Intergration Into Games (UE5 C++)</h3>
+            </a>
+            <a href="5v5.html" class="project-button">
+                <img src="images/Curve.png" alt="Project 1">
+                <h3>5v5 Based Skill Rating System (UE5 C++)</h3>
+            </a>
+            <a href="Trials.html" class="project-button">
+                <img src="images/Trials.png" alt="Project 2">
+                <h3>The Trials Of Anubis (OpenGL C++)</h3>
+            </a>
+            <!-- Add more projects as needed -->
+            <a href="Reclaimed.html" class="project-button">
+                <img src="images/Reclaimed.png" alt="Project 3">
+                <h3>Reclaimed Mobile Game (Unity C#)</h3>
+            </a>
+            <a href="SpawnSystemTool.html" class="project-button">
+                <img src="images/Tool.png" alt="Project 4">
+                <h3>Spawn System Tool (UE5 C++)</h3>
+            </a>
+            <a href="ZombieGame.html" class="project-button">
+                <img src="images/ZombieGame.png" alt="Project 5">
+                <h3>Zombie Game (Unity C#)</h3>
+            </a>
+            <a href="Tavern.html" class="project-button">
+                <img src="images/Tavern2.png" alt="Project 6">
+                <h3>TaVeRn (Unity C# - VR)</h3>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #2c323a; color: #fff; display: flex; flex-direction: column; align-items: center; padding-bottom: 50px;">
+        <h2>Contact</h2>
+        <div style="display: flex; flex-direction: row; gap: 50px;">
+            <p><a href="mailto:boycechris001@gmail.com" style="color: #fff;"><i class="fas fa-envelope"></i> Email</a></p>
+            <p><a href="https://www.linkedin.com/in/chris--boyce/" target="_blank" style="color: #fff;"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+            <p><a href="https://github.com/chris__boyce" target="_blank" style="color: #fff;"><i class="fab fa-github"></i> GitHub</a></p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Chris Boyce
+    </footer>
+
+</body>
 </html>
