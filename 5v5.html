@@ -1,79 +1,260 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Chris Boyce - 5v5</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Chris Boyce</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="5v5.html" class="active">5v5 Skill Rating Systems</a></li>
-						<li><a href="Trials.html" class="active">Trials Of Anubis</a></li>
-						<li><a href="Reclaimed.html" class="active">Reclaimed</a></li>
-					</ul>
-				</nav>
-			</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Rating Systems</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #61dafb;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        header {
+            text-align: center;
+            padding: 2em;
+            background-color: #282c34;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Analysis and Creation of Skill Rating System in 5v5 First Person Shooter Games</h1>
-							<h3>Skills Used in this Project</h3>
-							<p>C++ , Blueprint , Time Management, Mathmatic Algorthims, Research and Analysis </p>
-							<h3>Video of the Artifact</h3>
-							<html>
-							<iframe width="512" height="256" src="https://www.youtube.com/embed/5YCwsTO-8Kg" title="5v5 Skill Rating System (Artifact)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</html>
-						<h3>The Artifact</h3>
-						<p>The Artifact Developed from the project was 5v5 Game which 100 bots played and the results from this were saved from each match. This then was processed by the Skill Rating system after each match was played. The bots were then placed in the Skill Groups and Rematched.  </p>
-						<h3>The Development Process</h3>
-						<p>The first step in the developement was the Bots. They use the Unreal Engine Desision Trees and Blueprints to Move and perform the Shooting Actions. The Bots use the EQS system for movement using intrest points on the maps.</p>
-						<p>After this a game controller was made for each match. This would control the spawn points for each bot as well as the score and any changes that happen midmatch such as swaping spawns.</p>
-						<p>Because I wanted 10 games to be played at same time I made a server controller. This controls which bots were placed in each match as well as placing them with bots with similar Skill Rating.</p>
-						<p>At the end of each map the bots current Skill Rating was adjusted using the Elo Algorthim, TrueSkill Algorthim and Finally my Own Algorthim. The process was repeated to simulate people playing multiple matches</p>
-						<p>Data from each game was recorded to a JSON file. This included the bots in each match K/D the result of the game and the Skill Rating or in TrueSkill system the Mu and Sigma</p>
-						<h3>Code Review Video</h3>
-						<iframe width="512" height="256" src="https://www.youtube.com/embed/RU2zXb6DCkw" title="5v5 Based Elo Shooter System Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						<h3>Have a Read of my Dissertation</h3>
-						<iframe src="https://staffsuniversity-my.sharepoint.com/personal/b016871j_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc={fc8130b8-7cd5-45c6-898b-c3ac27ecf648}&amp;action=embedview" width="800px" height="400px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-						</div>
-					</section>
+        nav {
+            background: linear-gradient(to right, #800080, #0000FF);
+            padding: 0.3em;
+            text-align: center;
+        }
+        .social-icon {
+             color: #fff; /* Set the color to white */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
 
-			</div>
+        nav a {
+            color: #2c323a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Chris Boyce</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        section#project-container {
+            text-align: center;
+            padding: 2em;
+            background-color: #282c34;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
 
-	</body>
-</html>
+        section#topics-covered {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2c323a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+        }
+
+		section#github-link {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2c323a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+        }
+
+        section#youtube-video {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#tldr {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		section#doc {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding-bottom: 50px; /* Add padding to the bottom */
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: vertical;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+        }
+
+        /* Style for the two-column bulleted list */
+        .project-description {
+            columns: 2;
+            column-gap: 20px;
+        }
+
+        /* Remove default list styles */
+        .project-description ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-description li {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #2c323a;
+            color: #abb2bf;
+            padding: 10px;
+            width: 250px;
+            height: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside a {
+            display: flex;
+            align-items: center;
+            color: #abb2bf;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+		
+    </style>
+</head>
+
+<body>
+    <aside>
+        <a href="#top">Rating Systems</a>
+        
+        <a class="angle-right-icon fas fa-angle-down" href="#topics-covered"></a>
+        <a href="#topics-covered">Skills</a>
+
+		<a class="angle-right-icon fas fa-angle-down" href="#tldr"></a>
+        <a href="#tldr">TLDR</a>
+    
+        <a class="angle-right-icon fas fa-angle-down" href="#youtube-video"></a>
+        <a href="#youtube-video">Youtube Video</a>
+
+		<a class="angle-right-icon fas fa-angle-down" href="#youtube-video"></a>
+        <a href="#github-link">Github</a>
+    
+        
+		<a class="angle-right-icon fas fa-angle-down" href="#doc"></a>
+        <a href="#doc">Doc</a>
+    </aside>
+
+    <header>
+        <h1>Creation of Skill Rating System in 5v5 First Person Shooter Games</h1>
+    </header>
+
+    <nav>
+        <a href="https://twitter.com/chris__boyce" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/chris--boyce/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chris-boyce" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:boycechris001@gmail.com" style="color: #fff;"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- Add your project details section using the provided styles -->
+    <section id="topics-covered">
+        <h2>Skills</h2>
+        <div class="project-description">
+            <ul>
+                <li>C++</li>
+                <li>Blueprint</li>
+                <li>Time Management</li>
+                <li>Mathmatic Algorthims</li>
+                <li>Research and Analysis</li>
+            </ul>
+        </div>
+    </section>
+	<section id="tldr">
+        <h2>TLDR</h2>
+        
+        <p>The project resulted in the creation of a 5v5 game where 100 bots participated, and the outcomes of each match were recorded. Subsequently, a Skill Rating system was employed to analyze the match results after each game. The bots were then categorized into Skill Groups based on their performance and were given opportunities for rematches within their respective skill levels. This iterative process aimed to enhance the overall gaming experience by continually refining the skill balance among the bots.</p>
+        <p>Three algorithms, including Elo, TrueSkill, and a proprietary one, adjusted the skill ratings of the bots. The iterative process simulated 50 matches, refining skill accuracy for dynamic gameplay.</p>
+        <p>The AI use the Unreal Engine Desision Trees and Blueprints to Move and perform the Shooting Actions. The Bots use the EQS system for movement using intrest points on the maps.</p>
+    </section>
+
+	
+
+    <section id="youtube-video">
+        <h2>YouTube Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RU2zXb6DCkw" title="5v5 Based Elo Shooter System Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+	<section id="github-link" style="color: white;">
+		<h2>GitHub Repository</h2>
+		<a href="https://github.com/chris-boyce/Skill-Rating-Systems" target="_blank" style="color: white;">
+			<i class="fab fa-github" style="color: white;"></i> GitHub Repository
+		</a>
+	</section>
+
+    
+
+    <section id="doc">
+        <!-- <img src="path/to/your/image.jpg" alt="Project Image"> -->
+        <div>
+            <h2>Documentation</h2>
+            <!-- Example using an embedded PDF -->
+            <iframe src="PDFs/FYP.pdf" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <footer>
+       
