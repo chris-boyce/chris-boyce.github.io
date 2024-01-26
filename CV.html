@@ -1,56 +1,91 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Chris Boyce - TaVeRn</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Chris Boyce</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="5v5.html" class="active">5v5 Skill Rating Systems</a></li>
-						<li><a href="Trials.html" class="active">Trials Of Anubis</a></li>
-						<li><a href="Reclaimed.html" class="active">Reclaimed</a></li>
-					</ul>
-				</nav>
-			</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Boyce - CV</title>
+    <!-- Add the link to your existing Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34; /* Set body background color */
+            color: #61dafb; /* Set default text color */
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        header {
+            text-align: center;
+            padding: 2em;
+            background-color: #282c34;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
 
-				<iframe src="https://onedrive.live.com/embed?resid=3BA5AF47F2CEDB1A%215607&amp;authkey=!AOPaYeZjI4rlIsY&amp;em=2" width="1200px" height="1200px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        nav {
+            background: linear-gradient(to right, #800080, #0000FF);
+            padding: 0.3em;
+            text-align: center;
+        }
 
-			</div>
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Chris Boyce</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+        h1, h2 {
+            color: #fff;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
-	</body>
+        /* Responsive styling for embedded PDF */
+        .pdf-container {
+            width: 100%;
+            height: 1000px; /* Adjust height as needed */
+        }
+
+        .pdf-container embed {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Chris Boyce</h1>
+        <p style="font-size: 1.2em;">Curriculum Vitae</p>
+    </header>
+
+    <nav>
+        <!-- You can add navigation links if needed -->
+    </nav>
+
+    <section>
+        <div class="pdf-container">
+            <embed src="PDFs/CV.pdf" type="application/pdf" width="100%" height="100%">
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Chris Boyce
+    </footer>
+
+</body>
+
 </html>
