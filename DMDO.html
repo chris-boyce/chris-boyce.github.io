@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMDO</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #61dafb;
+        }
+
+        header {
+            text-align: center;
+            padding: 2em;
+            background-color: #282c34;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
+
+        nav {
+            background: linear-gradient(to right, #800080, #0000FF);
+            padding: 0.3em;
+            text-align: center;
+        }
+        .social-icon {
+             color: #fff; /* Set the color to white */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        nav a {
+            color: #2c323a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#project-container {
+            text-align: center;
+            padding: 2em;
+            background-color: #282c34;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
+
+        section#topics-covered {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2c323a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+        }
+
+		section#github-link {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2c323a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+        }
+
+        section#youtube-video {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#tldr {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		section#doc {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding-bottom: 50px; /* Add padding to the bottom */
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: vertical;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+        }
+
+        /* Style for the two-column bulleted list */
+        .project-description {
+            columns: 2;
+            column-gap: 20px;
+        }
+
+        /* Remove default list styles */
+        .project-description ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-description li {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #2c323a;
+            color: #abb2bf;
+            padding: 10px;
+            width: 250px;
+            height: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside a {
+            display: flex;
+            align-items: center;
+            color: #abb2bf;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+		
+    </style>
+</head>
+
+<body>
+    <aside>
+        <a href="#top">Dung Mans Day Out</a>
+        
+
+
+		<a class="angle-right-icon fas fa-angle-down" href="#tldr"></a>
+        <a href="#tldr">TLDR</a>
+
+        <a class="angle-right-icon fas fa-angle-down" href="#youtube-video"></a>
+        <a href="#github-link">Github</a>
+    
+        <a class="angle-right-icon fas fa-angle-down" href="#youtube-video"></a>
+        <a href="#youtube-video">Youtube Videos</a>
+
+		
+    
+        
+    </aside>
+
+    <header>
+        <h1>Dung Mans Day Out</h1>
+    </header>
+
+    <nav>
+        <a href="https://twitter.com/chris__boyce" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/chris--boyce/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chris-boyce" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:boycechris001@gmail.com" style="color: #fff;"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    
+	<section id="tldr">
+        <h2>TLDR</h2>
+        <p>Get ready for a hilarious and uproarious adventure in Dung Mans Day Out. A side-splitting game that combines the classic charm of Monkey Ball with the absurdity of primal communication! As part of the the Global Game Jam 2024, your task is simple: navigate dung man through a series of challenging levels, but there's a twist. The core gameplay of Dung Mans Day Out requires a microphone please ensure that one is connected and set up within the games settings.</p>
+
+        
+    </section>
+
+	<section id="github-link" style="color: white;">
+		<h2>GitHub Repository</h2>
+		<a href="https://github.com/chris-boyce/ToTheMoon" target="_blank" style="color: white;">
+			<i class="fab fa-github" style="color: white;"></i> GitHub Repository
+		</a>
+        
+	</section>
+
+    <section id="github-link" style="color: white;">
+		<h2>Global Game Jam Page</h2>
+		<a href="https://github.com/chris-boyce/ToTheMoon" target="_blank" style="color: white;">
+			<i class="fa-window-maximize" style="color: white;"></i> Global Game Jam Page
+		</a>
+        
+	</section>
+
+    <section id="youtube-video">
+        <h2>YouTube Video</h2>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/RSEdUhuWNzg" title="Dung Mans Day Out" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </section>
+
+	
+
+    
+
+
+    <footer>
+       
