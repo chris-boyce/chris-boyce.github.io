@@ -20,22 +20,24 @@
         .project-button {
             position: relative;
             text-decoration: none;
-            color: #ffffff; /* Set text color for project names */
-            display: flex;
+            color: #ffffff;
+         display: flex;
             flex-direction: column;
-            align-items: center;
+         align-items: center;
             padding: 10px;
-            background-color: #4f555e; /* Set background color for each button */
+            background-color: #4f555e;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden; 
+            overflow: hidden;
+            width: 300px;  /* Fixed width */
+            height: 300px; /* Fixed height */
         }
 
         .project-button img {
-            width: 100%; /* Make sure the image fills the button */
-            border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
-            object-fit: cover; /* Ensure the image covers the entire container */
-            height: 100%; /* Force the image to be square */
+         width: 100%;
+         border-radius: 8px 8px 0 0;
+         object-fit: cover;
+        height: 90%; /* Adjust height percentage to maintain aspect ratio */
         }
 
         .project-button h3 {
@@ -44,17 +46,17 @@
         .project-description {
             position: absolute;
             top: 0;
-            left: 0;
+             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(79, 85, 94, 0.8); /* Semi-transparent background */
-            color: #fff;
+            background-color: rgba(79, 85, 94, 0.8);
+         color: #fff;
             display: flex;
-            flex-direction: column;
+        flex-direction: column;
             align-items: center;
             justify-content: center;
-            opacity: 0; /* Initially hidden */
-            transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
         }
         .project-button:hover .project-description {
             opacity: 1; /* Show the description on hover */
@@ -205,6 +207,11 @@
     text-align: center;
     
     }
+    @media (max-width: 750) {
+            aside {
+                display: none;
+            }
+        }
 
     .new-banner {
     position: absolute;
@@ -273,6 +280,17 @@
     <section id="projects">
         <h2>My Projects</h2>
         <div class="project-buttons">
+            <a href="PKS.html" class="project-button">
+                <img src="images/PKS.png" alt="Project 1">
+                <h3>CO-OP PCG Gun System</h3>
+                <div class="project-description">
+                    <p>Post Grad Disseration</p>
+                    <p>July 2024 - Present </p>
+                    <p>Unreal Engine C++ </p>
+                    <p>Click To See More</p>
+                </div>
+            </a>
+            
             <a href="MenuSystem.html" class="project-button">
                 <img src="images/MS.png" alt="Project 1">
                 <h3>Menu System</h3>
@@ -297,7 +315,6 @@
             <a href="GunSystem.html" class="project-button">
                 <img src="images/GS.png" alt="Project 1">
                 <h3>Auto Benchmark</h3>
-                <span class="new-banner">NEW</span>
                 <div class="project-description">
                     <p>Post Grad Project</p>
                     <p>03.03.24 - 19.04.24</p>

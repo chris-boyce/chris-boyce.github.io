@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Kill Summer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #61dafb;
+        }
+        header, section {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #2c323a;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background: linear-gradient(to right, #800080, #0000FF);
+            padding: 0.3em;
+            text-align: center;
+        }
+        .social-icon {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        nav a {
+            color: #2c323a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        h1, h2, p {
+            color: #fff;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+        }
+        footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Add the media query at the end of your existing styles */
+        @media (max-width: 750) {
+            aside {
+                display: none;
+            }
+        }
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #2c323a;
+            color: #abb2bf;
+            padding: 10px;
+            width: 250px;
+            height: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        aside a {
+            display: flex;
+            align-items: center;
+            color: #abb2bf;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        #GIFs {
+    text-align: center; /* Center aligns text, good for headings and descriptions */
+    background-color: #2c323a; /* Dark background for the section */
+    color: #fff; /* Light text color for contrast */
+    padding: 20px 0; /* Vertical padding only */
+}
+
+.gif-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 20px; /* Space between items */
+    margin: 0 auto; /* Centers the grid in the section */
+    width: 100%; /* Optionally control the grid width */
+}
+
+.gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the content of each GIF container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Optional: adds depth with a shadow */
+    padding: 10px; /* Padding around each GIF for spacing */
+    background-color: #282c34;  /* Optional: different background for each container */
+}
+
+.gif-description {
+    text-align: center; /* Ensures descriptions are center-aligned */
+    margin-top: 10px; /* Spacing above descriptions */
+    color: #fff; /* Ensures descriptions are light colored */
+    font-size: 0.9em; /* Slightly smaller font for descriptions */
+}
+        #tldr {
+             text-align: left; /* Align text to the left */
+        }
+        .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns to fit the 2-row requirement */
+    grid-auto-flow: dense;
+    grid-gap: 10px; /* Adjust gap between items if necessary */
+    list-style: none;
+    padding: 0; /* Removes padding to align properly */
+}
+
+.skills-grid li {
+    background-color: #2c323a; /* Optional: adds background color to each list item */
+    padding: 10px; /* Optional: adds padding inside each list item */
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Optional: adds subtle shadow for depth */
+    text-align: center; /* Center aligns the text within each list item */
+}
+    </style>
+</head>
+<body>
+    <aside>
+        <a href="#top">Project Kill Summer</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#topics-covered"></a>
+        <a href="#topics-covered">Skills</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#tldr"></a>
+        <a href="#tldr">TLDR</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#youtube-video"></a>
+        <a href="#youtube-video">Youtube Video</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#github-link"></a>
+        <a href="#github-link">GitHub</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#doc"></a>
+        <a href="#doc">Doc</a>
+    </aside>
+    <header>
+        <h1>PCG Weapon System (WIP)</h1>
+    </header>
+    <nav>
+        <a href="https://twitter.com/chris__boyce" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/chris--boyce/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chris-boyce" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:boycechris001@gmail.com" style="color: #fff;"><i class="fas fa-envelope"></i></a>
+    </nav>
+    <section id="topics-covered">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+            <li>Unreal Engine</li>
+            <li>C++</li>
+            <li>Blueprint</li>
+            <li>Motion Matching</li>
+            <li>PCG</li>
+            <li>Particles</li>
+            <li>Player Movement</li>
+        </ul>
+    </section>
+    <section id="tldr">
+        <h2>TLDR</h2>
+        <p>This research paper will investigate and develop a solution for implementing PCG arcade gun system in Unreal Engine, the system will be tested for the drop rate and pool as well as the usability and enjoyment from the gun system. This project will include an artifact of a third person shooter game the incorporated these game mechanics that will be used for the testing data. </p>
+    </section>
+    <section id="gifs">
+        <h2>Movement</h2>
+        <div class="gif-buttons">
+            <div class="gif-container">
+                <img src="images/m1.gif" alt="Gameplay GIF 1" class="gif-image">
+                <p class="gif-description">Teleport</p>
+            </div>
+            <div class="gif-container">
+                <img src="images/m2.gif" alt="Gameplay GIF 2" class="gif-image">
+                <p class="gif-description">Gravity Hook</p>
+            </div>
+            <div class="gif-container">
+                <img src="images/m3.gif" alt="Gameplay GIF 3" class="gif-image">
+                <p class="gif-description">Slide</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section id="youtube-video">
+        <h2>Random Generation of Components</h2>
+        <video controls>
+            <source src="images/Gun1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+
+    <section id="gifs">
+        <h2>Bullet Types</h2>
+        <div class="gif-buttons">
+            <div class="gif-container">
+                <img src="images/b1.gif" alt="Gameplay GIF 1" class="gif-image">
+                <p class="gif-description">Bounce</p>
+            </div>
+            <div class="gif-container">
+                <img src="images/b2.gif" alt="Gameplay GIF 2" class="gif-image">
+                <p class="gif-description">Explosion</p>
+            </div>
+            <div class="gif-container">
+                <img src="images/b3.gif" alt="Gameplay GIF 3" class="gif-image">
+                <p class="gif-description">Magnetic</p>
+            </div>
+            <div class="gif-container">
+                <img src="images/b4.gif" alt="Gameplay GIF 3" class="gif-image">
+                <p class="gif-description">Blackhole</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="github-link">
+        <h2>GitHub Repository</h2>
+        <a href="https://github.com/chris-boyce/MultiPKS" target="_blank" style="color: white;">
+            <i class="fab fa-github"></i> GitHub Repository
+        </a>
+    </section>
+    <section id="doc">
+        <h2>Documentation</h2>
+        <h3>Dissertation - Currently Private Till External Examination Finished</h3>
+        <!-- Example using an embedded PDF -->
+        <iframe src="PDFs/.pdf" frameborder="0"></iframe>
+    </section>
+    <footer>
+        &copy; 2024 Chris Boyce
+    </footer>
+</body>
+</html>
