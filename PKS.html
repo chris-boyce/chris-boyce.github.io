@@ -62,12 +62,6 @@
             bottom: 0;
             width: 100%;
         }
-        /* Add the media query at the end of your existing styles */
-        @media (max-width: 750) {
-            aside {
-                display: none;
-            }
-        }
         aside {
             position: fixed;
             top: 0;
@@ -91,61 +85,62 @@
             margin: 5px 0;
             font-size: 1em;
         }
-        #GIFs {
-    text-align: center; /* Center aligns text, good for headings and descriptions */
-    background-color: #2c323a; /* Dark background for the section */
-    color: #fff; /* Light text color for contrast */
-    padding: 20px 0; /* Vertical padding only */
-}
-
-.gif-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
-    gap: 20px; /* Space between items */
-    margin: 0 auto; /* Centers the grid in the section */
-    width: 100%; /* Optionally control the grid width */
-}
-
-.gif-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center-aligns the content of each GIF container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Optional: adds depth with a shadow */
-    padding: 10px; /* Padding around each GIF for spacing */
-    background-color: #282c34;  /* Optional: different background for each container */
-}
-
-.gif-description {
-    text-align: center; /* Ensures descriptions are center-aligned */
-    margin-top: 10px; /* Spacing above descriptions */
-    color: #fff; /* Ensures descriptions are light colored */
-    font-size: 0.9em; /* Slightly smaller font for descriptions */
-}
-        #tldr {
-             text-align: left; /* Align text to the left */
+    
+        .gif-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 0 auto;
+            width: 100%;
         }
-        .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns to fit the 2-row requirement */
-    grid-auto-flow: dense;
-    grid-gap: 10px; /* Adjust gap between items if necessary */
-    list-style: none;
-    padding: 0; /* Removes padding to align properly */
-}
 
-.skills-grid li {
-    background-color: #2c323a; /* Optional: adds background color to each list item */
-    padding: 10px; /* Optional: adds padding inside each list item */
-    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Optional: adds subtle shadow for depth */
-    text-align: center; /* Center aligns the text within each list item */
-}
+        .gif-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            padding: 10px;
+            background-color: #282c34;
+        }
+
+        .gif-description {
+            text-align: center;
+            margin-top: 10px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+        #tldr {
+             text-align: left;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-flow: dense;
+            grid-gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-grid li {
+            background-color: #2c323a;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            aside {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <aside>
         <a href="#top">Project Kill Summer</a>
-        <a class="angle-right-icon fas fa-angle-down" href="#topics-covered"></a>
-        <a href="#topics-covered">Skills</a>
+        <a class="angle-right-icon fas fa-angle-down" href="#skills"></a>
+        <a href="#skills">Skills</a>
         <a class="angle-right-icon fas fa-angle-down" href="#tldr"></a>
         <a href="#tldr">TLDR</a>
         <a class="angle-right-icon fas fa-angle-down" href="#youtube-video"></a>
@@ -164,7 +159,7 @@
         <a href="https://github.com/chris-boyce" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         <a href="mailto:boycechris001@gmail.com" style="color: #fff;"><i class="fas fa-envelope"></i></a>
     </nav>
-    <section id="topics-covered">
+    <section id="skills">
         <h2>Skills</h2>
         <ul class="skills-grid">
             <li>Unreal Engine</li>
@@ -172,34 +167,32 @@
             <li>Blueprint</li>
             <li>Motion Matching</li>
             <li>PCG</li>
-            <li>Particles</li>
             <li>Player Movement</li>
+            <li>Steam Sessions</li>
+            <li>Multiplayer</li>
         </ul>
     </section>
     <section id="tldr">
         <h2>TLDR</h2>
-        <p>This research paper will investigate and develop a solution for implementing PCG arcade gun system in Unreal Engine, the system will be tested for the drop rate and pool as well as the usability and enjoyment from the gun system. This project will include an artifact of a third person shooter game the incorporated these game mechanics that will be used for the testing data. </p>
+        <p>This research paper will investigate and develop a solution for implementing a PCG arcade gun system in Unreal Engine, including testing for the drop rate and usability. The project will also feature a third-person shooter game for data collection.</p>
     </section>
-    <section id="gifs">
+    <section id="gif-buttons">
         <h2>Movement</h2>
         <div class="gif-buttons">
             <div class="gif-container">
-                <img src="images/m1.gif" alt="Gameplay GIF 1" class="gif-image">
+                <img src="images/m1.gif" alt="Teleport gameplay" class="gif-image">
                 <p class="gif-description">Teleport</p>
             </div>
             <div class="gif-container">
-                <img src="images/m2.gif" alt="Gameplay GIF 2" class="gif-image">
+                <img src="images/m2.gif" alt="Gravity Hook gameplay" class="gif-image">
                 <p class="gif-description">Gravity Hook</p>
             </div>
             <div class="gif-container">
-                <img src="images/m3.gif" alt="Gameplay GIF 3" class="gif-image">
+                <img src="images/m3.gif" alt="Slide gameplay" class="gif-image">
                 <p class="gif-description">Slide</p>
             </div>
         </div>
     </section>
-
-    
-    
     <section id="youtube-video">
         <h2>Random Generation of Components</h2>
         <video controls>
@@ -207,30 +200,27 @@
             Your browser does not support the video tag.
         </video>
     </section>
-
-
-    <section id="gifs">
+    <section id="bullet-types">
         <h2>Bullet Types</h2>
         <div class="gif-buttons">
             <div class="gif-container">
-                <img src="images/b1.gif" alt="Gameplay GIF 1" class="gif-image">
+                <img src="images/b1.gif" alt="Bounce Bullet Type" class="gif-image">
                 <p class="gif-description">Bounce</p>
             </div>
             <div class="gif-container">
-                <img src="images/b2.gif" alt="Gameplay GIF 2" class="gif-image">
+                <img src="images/b2.gif" alt="Explosion Bullet Type" class="gif-image">
                 <p class="gif-description">Explosion</p>
             </div>
             <div class="gif-container">
-                <img src="images/b3.gif" alt="Gameplay GIF 3" class="gif-image">
+                <img src="images/b3.gif" alt="Magnetic Bullet Type" class="gif-image">
                 <p class="gif-description">Magnetic</p>
             </div>
             <div class="gif-container">
-                <img src="images/b4.gif" alt="Gameplay GIF 3" class="gif-image">
+                <img src="images/b4.gif" alt="Blackhole Bullet Type" class="gif-image">
                 <p class="gif-description">Blackhole</p>
             </div>
         </div>
     </section>
-
     <section id="github-link">
         <h2>GitHub Repository</h2>
         <a href="https://github.com/chris-boyce/MultiPKS" target="_blank" style="color: white;">
@@ -240,8 +230,7 @@
     <section id="doc">
         <h2>Documentation</h2>
         <h3>Dissertation - Currently Private Till External Examination Finished</h3>
-        <!-- Example using an embedded PDF -->
-        <iframe src="PDFs/.pdf" frameborder="0"></iframe>
+        <iframe src="PDFs/dissertation.pdf" frameborder="0"></iframe> <!-- Adjusted to a valid file path -->
     </section>
     <footer>
         &copy; 2024 Chris Boyce

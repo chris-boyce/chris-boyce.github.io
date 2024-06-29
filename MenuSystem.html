@@ -174,6 +174,28 @@
             font-size: 1em;
         }
 
+        /* Grid layout for topics covered */
+    .topics-grid {
+     display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    grid-gap: 10px; /* Spacing between grid items */
+    padding: 20px; /* Padding around the grid container */
+    list-style: none; /* Removes default list style */
+}
+
+.topic-item {
+    background-color: #282c34; /* Dark background color */
+    padding: 10px; /* Padding inside each grid item */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center; /* Center text within the grid item */
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+@media (max-width: 768px) {
+    aside {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+}
 		
     </style>
 </head>
@@ -213,19 +235,16 @@
     <!-- Add your project details section using the provided styles -->
     <section id="topics-covered">
         <h2>Topics Covered</h2>
-        <div class="project-description">
-            <ul>
-                <li>Maps</li>
-                <li>Link Lists</li>
-                <li>Stacks</li>
-                <li>Queues</li>
-                <li>Templates</li>
-                <li>Try-Catch</li>
-                <li>Lambda Functions</li>
-                <li>Binary Trees</li>
-                <!-- Add more list items as needed -->
-            </ul>
-        </div>
+        <ul class="topics-grid">
+            <li class="topic-item">Maps</li>
+            <li class="topic-item">Link Lists</li>
+            <li class="topic-item">Stacks</li>
+            <li class="topic-item">Queues</li>
+            <li class="topic-item">Templates</li>
+            <li class="topic-item">Try-Catch</li>
+            <li class="topic-item">Lambda Functions</li>
+            <li class="topic-item">Binary Trees</li>
+        </ul>
     </section>
 	<section id="tldr">
         <h2>TLDR</h2>
