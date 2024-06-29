@@ -207,12 +207,7 @@
     text-align: center;
     
     }
-    @media (max-width: 750) {
-            aside {
-                display: none;
-            }
-        }
-
+    
     .new-banner {
     position: absolute;
     top: 0;
@@ -221,29 +216,50 @@
     color: white; /* Change as needed */
     padding: 5px 10px;
     font-size: 12px;
-    z-index: 10; /* Ensures it stays on top */
+    z-index: 10; 
 }
 
+@media (max-width: 768px) {
+    aside {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+
+    #sidebar-toggle {
+        display: block; /* Show the toggle button on smaller screens */
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #2c323a;
+        color: #61dafb;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .sidebar-open aside {
+        display: flex; /* Show the sidebar when the button is clicked */
+    }
+
+    .sidebar-open #sidebar-toggle {
+        display: none; /* Hide the toggle button when the sidebar is open */
+    }
+}
 
     </style>
 </head>
-<body>
-
+<body id="top">
+    <button id="sidebar-toggle">☰ Menu</button> <!-- Toggle button for the sidebar -->
     <aside>
         <a href="#top">Chris Boyce</a>
         <a class="angle-right-icon fas fa-angle-down" href="#about-me"></a>
         <a href="#about-me">About Me</a>
-
         <a class="angle-right-icon fas fa-angle-down" href="#projects"></a>
         <a href="#projects">My Projects</a>
-
         <a class="angle-right-icon fas fa-angle-down" href="#contact"></a>
         <a href="#contact">Contact</a>
     </aside>
-
-    <body id="top">
-        <!-- Your page content -->
-    </body>
 
     <header>
         <h1>Chris Boyce</h1>
@@ -412,7 +428,6 @@
 
         
 
-            
         </div>
     </section>
 
@@ -426,9 +441,17 @@
             <p><a href="CV.html" target="_blank" style="color: #fff;"><i class="far fa-file"></i> CV</a></p>
         </div>
     </section>
+
+
     <footer>
         &copy; 2024 Chris Boyce
     </footer>
+
+    <script>
+        document.getElementById('sidebar-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('sidebar-open');
+        });
+    </script>
 
 </body>
 </html>
